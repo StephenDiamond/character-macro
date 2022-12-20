@@ -1,0 +1,1 @@
+export const CM_MODULE_FLAG = 'character-macros';
