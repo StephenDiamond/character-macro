@@ -1,0 +1,14 @@
+.macro-list {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.macro-list label {
+  flex: 2;
+}
+
+.macro-list button {
+  flex: 2;
+}

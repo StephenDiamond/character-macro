@@ -1,4 +1,4 @@
-import MacroPanel from '../ui/macro-panel.mjs';
+import MacroSetupPanel from '../ui/macro-setup-panel.mjs';
 
 export function registerMacroConfig() {
 
@@ -10,7 +10,7 @@ export function registerMacroUI() {
         `<a class="open-actor-macros" title="Character Macros"><i class="fas fa-wrench"></i>Macros</a>`
       );
       openButton.on("click", () => {
-        new MacroPanel(app.document, data.actor).render(true);
+        new MacroSetupPanel(app.document, data.actor).render(true);
       });
       html.closest(".app").find(".open-actor-macros").remove();
       const titleElement = html.closest(".app").find(".window-title");
